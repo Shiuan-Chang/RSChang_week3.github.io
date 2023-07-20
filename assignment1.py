@@ -18,7 +18,7 @@ def attraction():
         stitle = result["stitle"]
         address = result["address"]
         # 把地址按空白建分割後，會有三組資料，取得第三組資料(即區域+地址)，取前面三個字(即地區)
-        district = address.split(" ")[-1][:3]
+        district = address.split(" ")[2][:3]
         longitude = result["longitude"]
         latitude = result["latitude"]
         file_urls = result["file"].split("https://")  # 用http:// 作為切分的依據
